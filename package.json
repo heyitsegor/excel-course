@@ -48,6 +48,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "har-validator": "^5.1.5",
-    "html-webpack-plugin": "^5.5.0"
+    "html-webpack-plugin": "^5.5.0",
+    "normalize.css": "^8.0.1"
   }
 }

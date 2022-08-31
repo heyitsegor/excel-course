@@ -1,9 +1,9 @@
-import {$} from '@core/DOM';
+import {$} from '@core/DOM'
 
 export class Excel {
   constructor(selector, options) {
-    this.$el = $(selector);
-    this.components = options.components || [];
+    this.$el = $(selector)
+    this.components = options.components || []
   }
 
   getRoot() {
@@ -12,6 +12,10 @@ export class Excel {
     this.components = this.components.map((Component) => {
       const $el = $.create('div', Component.className)
       const component = new Component($el)
+      // // DEBUG
+      // if (component.name) {
+      //   window['!c'+component.name] = component
+      // }
       $el.html(component.toHTML())
       $root.append($el)
       return component

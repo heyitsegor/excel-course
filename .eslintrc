@@ -7,7 +7,8 @@
   },
   "rules": {
     "semi": "off",
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "no-unused-vars": "warn"
   },
   "extends": ["eslint:recommended", "google"]
 }
